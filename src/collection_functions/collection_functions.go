@@ -1,8 +1,10 @@
 package main
+
 import (
 	"fmt"
 	"strings"
 )
+
 func Index(vs []string, t string) int {
 	for i, v := range vs {
 		if v == t {
@@ -57,11 +59,11 @@ func main() {
 		return strings.HasPrefix(v, "p")
 	}))
 
-	fmt.Println(All(strs, func (v string) bool {
+	fmt.Println(All(strs, func(v string) bool {
 		return strings.HasPrefix(v, "p")
 	}))
 
-	fmt.Println(Filter(strs, func (v string) bool {
+	fmt.Println(Filter(strs, func(v string) bool {
 		return strings.Contains(v, "e")
 	}))
 
